@@ -1,0 +1,82 @@
+{
+  "name": "practical-oo-design",
+  "version": "1.0.0",
+  "description": "Practical Object-Oriented Design, A Primer Using Typescript (examples adapted from the Sandi Metz book)",
+  "private": true,
+  "author": {
+    "name": "Justin Beaudry",
+    "email": "practical-oo-design@justinbeaudry.dev",
+    "url": "justinbeaudry.dev"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write .",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.9.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
+    "@fontsource/anonymous-pro": "^4.5.6",
+    "@mdx-js/loader": "^2.1.1",
+    "@mdx-js/react": "^2.1.1",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.2",
+    "@next/mdx": "^12.1.6",
+    "lodash.flow": "^3.5.0",
+    "next": "^12.1.5",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.17.9",
+    "@types/lodash.flow": "^3",
+    "@types/node": "^17.0.25",
+    "@types/react": "^18.0.5",
+    "@types/react-dom": "^18.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "eslint": "^8.13.0",
+    "eslint-config-next": "^12.1.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-mdx": "^1.17.0",
+    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-mdx": "^1.17.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.0",
+    "install-chrome-dependencies": "^1.1.2",
+    "lint-prepush": "^2.2.1",
+    "lint-staged": "^12.4.0",
+    "precise-commits": "^1.0.2",
+    "prettier": "^2.6.2",
+    "puppeteer": "^14.0.0",
+    "remark": "^14.0.2",
+    "remark-codesandbox": "^0.10.1",
+    "remark-mermaidjs": "^2.1.1",
+    "typescript": "^4.6.3",
+    "webpack": ">=4"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx}": [
+      "eslint --fix"
+    ]
+  },
+  "lint-prepush": {
+    "base": "main",
+    "tasks": {
+      "*.{js,jsx,ts,tsx,md,mdx}": [
+        "eslint --fix"
+      ]
+    }
+  },
+  "packageManager": "yarn@3.2.0",
+  "resolutions": {
+    "axios": ">=0.21.0",
+    "@braintree/sanitize-url": ">=6.0.0"
+  }
+}

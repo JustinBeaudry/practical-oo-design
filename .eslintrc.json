@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:markdown/recommended",
+    "prettier",
+    "next"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier", "mdx"],
+  "settings": {
+    "mdx/code-blocks": true
+  },
+  "overrides": [
+    {
+      "files": ["*.mdx"],
+      "extends": "plugin:mdx/recommended"
+    }
+  ],
+  "rules": {
+    "react/display-name": "off",
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "printWidth": 120,
+  "tabWidth": 2,
+  "semi": false,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "arrowParens": "avoid",
+  "parser": "typescript",
+  "proseWrap": "preserve",
+  "endOfLine": "auto",
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "parser": "markdown"
+      }
+    },
+		{
+			"files": "*.mdx",
+			"options": {
+				"parser": "mdx"
+			}
+		},
+		{
+			"files": "*.yml",
+			"options": {
+				"parser": "yaml"
+			}
+		},
+    {
+      "files": "*.json",
+      "options": {
+        "parser": "json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.pnp*
+.yarn/
+.husky/
+.github/
+.nvmrc
+.yarnrc.yml
+next-env.d.ts
+next.config.js
