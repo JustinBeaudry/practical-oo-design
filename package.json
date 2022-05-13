@@ -62,16 +62,12 @@
     "webpack": ">=4"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,md,mdx}": [
-      "eslint --fix"
-    ]
+    "*.{js,jsx,ts,tsx,md,mdx}": ["eslint --fix"]
   },
   "lint-prepush": {
     "base": "main",
     "tasks": {
-      "*.{js,jsx,ts,tsx,md,mdx}": [
-        "eslint --fix"
-      ]
+      "*.{js,jsx,ts,tsx,md,mdx}": ["eslint --fix"]
     }
   },
   "packageManager": "yarn@3.2.0",
